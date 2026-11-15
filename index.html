@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Rudransh Singh — Aspiring Software Developer</title>
+  <meta name="description" content="Portfolio of Rudransh Singh — an aspiring software developer building AI-powered, human-centred software with Python, Java, and the web.">
+  <meta name="author" content="Rudransh Singh">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4efe6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://flamekaiser2201.github.io/rudransh-portfolio/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Rudransh Singh">
+  <meta property="og:title" content="Rudransh Singh — Aspiring Software Developer">
+  <meta property="og:description" content="I build AI-powered software that feels simple, useful, and human. Explore AETHER, Smooth Snake, and the toolkit behind them.">
+  <meta property="og:url" content="https://flamekaiser2201.github.io/rudransh-portfolio/">
+  <meta property="og:image" content="https://flamekaiser2201.github.io/rudransh-portfolio/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Rudransh Singh — software developer portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rudransh Singh — Aspiring Software Developer">
+  <meta name="twitter:description" content="I build AI-powered software that feels simple, useful, and human.">
+  <meta name="twitter:image" content="https://flamekaiser2201.github.io/rudransh-portfolio/assets/img/og.png">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try {
+        var saved = localStorage.getItem('rs-theme');
+        var theme = saved === 'dark' || saved === 'light'
+          ? saved
+          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        root.setAttribute('data-theme', theme);
+      } catch (e) {
+        root.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rudransh Singh",
+    "email": "mailto:rudranshsinghfbd@gmail.com",
+    "telephone": "+91-8800113482",
+    "url": "https://flamekaiser2201.github.io/rudransh-portfolio/",
+    "image": "https://flamekaiser2201.github.io/rudransh-portfolio/assets/img/og.png",
+    "jobTitle": "Software Developer",
+    "sameAs": ["https://github.com/FlameKaiser2201"],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Manav Rachna University"
+    },
+    "knowsAbout": [
+      "Python", "Java", "JavaScript", "HTML", "CSS", "MySQL",
+      "Data Structures and Algorithms", "Problem Solving", "Artificial Intelligence"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="progress" aria-hidden="true"><span class="progress__bar" id="progress-bar"></span></div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24">
+      <path d="M4 12h16M13 5l7 7-7 7"/>
+    </symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24">
+      <path d="M7 17 17 7M8 7h9v9"/>
+    </symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24">
+      <path d="M12 4v16M5 13l7 7 7-7"/>
+    </symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24">
+      <path d="M12 20V4M5 11l7-7 7 7"/>
+    </symbol>
+    <symbol id="i-download" viewBox="0 0 24 24">
+      <path d="M12 3v12M7 10l5 5 5-5M4 20h16"/>
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/>
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24">
+      <path d="M20.5 14.1A8.5 8.5 0 0 1 9.9 3.5 8.5 8.5 0 1 0 20.5 14.1Z"/>
+    </symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24">
+      <rect x="9" y="9" width="11" height="11" rx="2"/>
+      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path d="m20 6-11 11-5-5"/>
+    </symbol>
+    <symbol id="i-github" viewBox="0 0 24 24">
+      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7.2A5.6 5.6 0 0 0 19.3 3 5.2 5.2 0 0 0 19.1 0S17.9-.4 15 1.6a13.4 13.4 0 0 0-7 0C5.1-.4 3.9 0 3.9 0a5.2 5.2 0 0 0-.2 3A5.6 5.6 0 0 0 2.2 7.3c0 5.6 3.5 6.8 6.8 7.2A4.8 4.8 0 0 0 8 18v4"/>
+      <path d="M8 19c-3 .9-3-1.5-4-2"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="m22 7-10 6L2 7"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/>
+    </symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24">
+      <rect x="4" y="10" width="16" height="11" rx="2"/>
+      <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+    </symbol>
+    <symbol id="i-wave" viewBox="0 0 24 24">
+      <path d="M3 10v4M7 7v10M11 4v16M15 8v8M19 10v4"/>
+    </symbol>
+    <symbol id="i-restart" viewBox="0 0 24 24">
+      <path d="M3 12a9 9 0 1 0 3-6.7L3 8"/>
+      <path d="M3 3v5h5"/>
+    </symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24">
+      <path d="M9 5v14M15 5v14"/>
+    </symbol>
+    <symbol id="i-up-down" viewBox="0 0 24 24">
+      <path d="M8 7 12 3l4 4M16 17l-4 4-4-4M12 3v18"/>
+    </symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24">
+      <path d="M12 2v20M2 12h20M5 5l14 14M19 5 5 19"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="#home" aria-label="Rudransh Singh — home">
+        <span class="brand__mark" aria-hidden="true">R</span>
+        <span class="brand__text">rudransh<span aria-hidden="true">.</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+          <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+          <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+        </button>
+        <a class="btn btn--solid btn--sm header__cta" href="#contact">
+          Let's talk
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+        </a>
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span class="menu-btn__box" aria-hidden="true"><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+    <div class="mobile-menu__inner">
+      <p class="mobile-menu__label">Navigate</p>
+      <nav class="mobile-menu__nav" aria-label="Mobile">
+        <a href="#about"><span>01</span>About</a>
+        <a href="#work"><span>02</span>Work</a>
+        <a href="#skills"><span>03</span>Skills</a>
+        <a href="#journey"><span>04</span>Journey</a>
+        <a href="#contact"><span>05</span>Contact</a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <a href="mailto:rudranshsinghfbd@gmail.com">rudranshsinghfbd@gmail.com</a>
+        <div class="mobile-menu__socials">
+          <a href="https://github.com/FlameKaiser2201" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="tel:+918800113482">+91 88001 13482</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            Software developer · AI &amp; full-stack
+          </p>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line">Rudransh</span>
+            <span class="hero__line hero__line--accent"><em>Singh</em><span class="hero__dot" aria-hidden="true">.</span></span>
+          </h1>
+
+          <p class="hero__lead">
+            I build <strong>AI-powered software</strong> that feels simple, useful, and human — from
+            voice-first workspaces to games that move like butter.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#work">
+              Explore my work
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+            </a>
+            <a class="btn btn--ghost" href="assets/resume/Rudransh-Singh-CV.pdf" download="Rudransh-Singh-CV.pdf">
+              Download CV
+              <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg>
+            </a>
+          </div>
+
+          <dl class="hero__meta">
+            <div>
+              <dt>Focus</dt>
+              <dd>AI &amp; full-stack</dd>
+            </div>
+            <div>
+              <dt>Education</dt>
+              <dd>Manav Rachna University</dd>
+            </div>
+            <div>
+              <dt>Based in</dt>
+              <dd>India</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__visual">
+          <span class="float-chip float-chip--memory">
+            <svg class="icon" aria-hidden="true"><use href="#i-lock"></use></svg>
+            Shared memory
+          </span>
+
+          <div class="voice-card" aria-label="Preview of the AETHER voice workspace">
+            <div class="voice-card__bar">
+              <span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="voice-card__name">aether / voice session</span>
+              <span class="live"><i aria-hidden="true"></i>Live</span>
+            </div>
+
+            <div class="voice-card__main">
+              <div class="voice-orb" aria-hidden="true">
+                <span class="voice-orb__ring"></span>
+                <span class="voice-orb__ring voice-orb__ring--2"></span>
+                <span class="voice-orb__core"></span>
+              </div>
+
+              <div class="wave" aria-hidden="true">
+                <i style="--h:28%;--d:0s"></i><i style="--h:52%;--d:.12s"></i><i style="--h:38%;--d:.24s"></i><i style="--h:68%;--d:.36s"></i><i style="--h:44%;--d:.48s"></i><i style="--h:82%;--d:.06s"></i><i style="--h:58%;--d:.18s"></i><i style="--h:34%;--d:.3s"></i><i style="--h:72%;--d:.42s"></i><i style="--h:48%;--d:.54s"></i><i style="--h:90%;--d:.1s"></i><i style="--h:62%;--d:.22s"></i><i style="--h:40%;--d:.34s"></i><i style="--h:76%;--d:.46s"></i><i style="--h:54%;--d:.58s"></i><i style="--h:86%;--d:.14s"></i><i style="--h:46%;--d:.26s"></i><i style="--h:66%;--d:.38s"></i><i style="--h:36%;--d:.5s"></i><i style="--h:78%;--d:.02s"></i><i style="--h:50%;--d:.16s"></i><i style="--h:88%;--d:.28s"></i><i style="--h:60%;--d:.4s"></i><i style="--h:42%;--d:.52s"></i><i style="--h:70%;--d:.08s"></i><i style="--h:32%;--d:.2s"></i><i style="--h:64%;--d:.32s"></i><i style="--h:48%;--d:.44s"></i>
+              </div>
+
+              <p class="voice-card__state"><span class="state-dot" aria-hidden="true"></span>Listening</p>
+              <p class="voice-card__quote">“Explain gradient descent like I’m twelve.”</p>
+            </div>
+
+            <div class="voice-card__reply">
+              <p>
+                Imagine walking downhill in the fog — each step follows the steepest slope.
+                <span class="cite">1</span><span class="cite">2</span>
+              </p>
+            </div>
+
+            <div class="voice-card__foot">
+              <span class="voice-card__memory">
+                <svg class="icon" aria-hidden="true"><use href="#i-lock"></use></svg>
+                Memory on
+              </span>
+              <span class="modes" aria-hidden="true">
+                <span>Study</span><span>Code</span><span>Interview</span>
+              </span>
+            </div>
+          </div>
+
+          <span class="float-chip float-chip--voice">
+            <svg class="icon" aria-hidden="true"><use href="#i-wave"></use></svg>
+            Streaming voice
+          </span>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#about">
+        <span>Scroll to explore</span>
+        <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"></use></svg>
+      </a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Python</span><i>✳</i><span>Artificial Intelligence</span><i>✳</i><span>Data Structures</span><i>✳</i><span>Problem Solving</span><i>✳</i><span>Flask</span><i>✳</i><span>MySQL</span><i>✳</i><span>JavaScript</span><i>✳</i><span>Java</span><i>✳</i><span>HTML &amp; CSS</span><i>✳</i>
+        </div>
+        <div class="marquee__group">
+          <span>Python</span><i>✳</i><span>Artificial Intelligence</span><i>✳</i><span>Data Structures</span><i>✳</i><span>Problem Solving</span><i>✳</i><span>Flask</span><i>✳</i><span>MySQL</span><i>✳</i><span>JavaScript</span><i>✳</i><span>Java</span><i>✳</i><span>HTML &amp; CSS</span><i>✳</i>
+        </div>
+      </div>
+    </div>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__top">
+            <span class="section-num">01</span>
+            <span class="section-label">About</span>
+            <span class="section-head__rule" aria-hidden="true"></span>
+          </div>
+          <div class="section-head__row">
+            <h2 id="about-title">Curious by default.<br>Analytical by training.</h2>
+            <p class="section-head__note">
+              A software developer in the making, focused on AI-powered products and the craft
+              of making complex things feel simple.
+            </p>
+          </div>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__main reveal">
+            <p class="about__lead">
+              I turn ambitious ideas into software that feels <em>effortless</em>.
+            </p>
+            <div class="about__body">
+              <p>
+                I’m an aspiring software developer with a strong foundation in Python, data
+                structures &amp; algorithms, and modern development practices. I learn quickly,
+                think analytically, and care about the details that make a product feel finished.
+              </p>
+              <p>
+                I’ve built AETHER, a voice-first AI workspace, and Smooth Snake, a game shipped for
+                both desktop and the browser. I’m drawn to artificial intelligence, scalable
+                systems, and teams that care about doing the work well.
+              </p>
+            </div>
+            <blockquote class="about__quote">
+              “Passionate about building scalable solutions, learning cutting-edge technologies,
+              and contributing to innovative teams.”
+            </blockquote>
+          </div>
+
+          <aside class="glance reveal" data-delay="1" aria-labelledby="glance-title">
+            <h3 id="glance-title">At a glance</h3>
+            <dl>
+              <div class="glance__row">
+                <dt>Education</dt>
+                <dd>B.Tech CSE · Manav Rachna University</dd>
+              </div>
+              <div class="glance__row">
+                <dt>Timeline</dt>
+                <dd>2024 — 2028</dd>
+              </div>
+              <div class="glance__row">
+                <dt>Focus</dt>
+                <dd>AI applications · Full-stack · DSA</dd>
+              </div>
+              <div class="glance__row">
+                <dt>Languages</dt>
+                <dd>Hindi · English</dd>
+              </div>
+              <div class="glance__row glance__row--status">
+                <dt>Status</dt>
+                <dd><span class="status-dot" aria-hidden="true"></span>Open to internships &amp; early-career roles</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="stats reveal">
+          <div class="stat">
+            <b>02</b>
+            <span>Projects built end to end</span>
+          </div>
+          <div class="stat">
+            <b>06</b>
+            <span>Studios inside AETHER</span>
+          </div>
+          <div class="stat">
+            <b>08</b>
+            <span>Core technologies</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__top">
+            <span class="section-num">02</span>
+            <span class="section-label">Selected work</span>
+            <span class="section-head__rule" aria-hidden="true"></span>
+          </div>
+          <div class="section-head__row">
+            <h2 id="work-title">Two builds,<br>two ways of thinking.</h2>
+            <p class="section-head__note">
+              One is an AI product with memory. The other is a game about movement. Both were
+              built from the ground up — and one is playable below.
+            </p>
+          </div>
+        </div>
+
+        <article class="project project--featured reveal" aria-labelledby="aether-title">
+          <div class="project__body">
+            <div class="project__top">
+              <span class="project__index">01 / 02</span>
+              <span class="project__badge">AI workspace</span>
+            </div>
+
+            <h3 class="project__title" id="aether-title">AETHER</h3>
+            <p class="project__sub">Adaptive AI Workspace</p>
+
+            <p class="project__desc">
+              A voice-first AI workspace where six studios — study, interviews, code, research,
+              files, and tasks — share one persistent memory and one conversation.
+            </p>
+
+            <ul class="feature-list">
+              <li>Six studios in one workspace: Study, Interview, Code, Research, Files, and Tasks, each with its own tools and context.</li>
+              <li>Speak or type: browser speech recognition, plus Deepgram and ElevenLabs, with responses streamed token-by-token over SSE.</li>
+              <li>FastAPI and Next.js on async PostgreSQL — with cited research, user-controlled memory, auth, and a Docker setup.</li>
+            </ul>
+
+            <ul class="tags" aria-label="AETHER technologies">
+              <li>FastAPI</li>
+              <li>Next.js</li>
+              <li>PostgreSQL</li>
+              <li>TypeScript</li>
+              <li>Voice AI</li>
+            </ul>
+
+            <div class="project__links">
+              <a class="project-link" href="https://github.com/FlameKaiser2201/aether-ai" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>
+                <span>View source</span>
+                <svg class="icon project-link__arrow" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="project__visual" aria-hidden="true">
+            <div class="aether-orbit">
+              <span class="aether-ring"></span>
+              <span class="aether-ring"></span>
+              <span class="aether-ring"></span>
+              <span class="mode-chip mode-chip--1">Study</span>
+              <span class="mode-chip mode-chip--2">Code</span>
+              <span class="mode-chip mode-chip--3">Interview</span>
+              <span class="mode-chip mode-chip--4">Research</span>
+              <span class="mode-chip mode-chip--5">Files</span>
+              <span class="mode-chip mode-chip--6">Tasks</span>
+              <span class="aether-core">A</span>
+            </div>
+            <p class="project__visual-caption">Six studios. One memory.</p>
+          </div>
+        </article>
+
+        <article class="project project--snake reveal" aria-labelledby="snake-title">
+          <div class="project__body">
+            <div class="project__top">
+              <span class="project__index">02 / 02</span>
+              <span class="project__badge">Game · Web</span>
+            </div>
+
+            <h3 class="project__title" id="snake-title">Smooth Snake</h3>
+            <p class="project__sub">A classic, rebuilt twice</p>
+
+            <p class="project__desc">
+              Snake with smooth, interpolated movement — shipped twice: a Pygame desktop game
+              and a Flask browser build deployed on Render.
+            </p>
+
+            <ul class="feature-list">
+              <li>Interpolated motion so the snake glides between cells instead of jumping, at any frame rate.</li>
+              <li>Two builds from one idea: a Python/Pygame desktop game and a browser version served by Flask.</li>
+              <li>Arrows or WASD, space to pause, R to restart — the same controls in both versions.</li>
+            </ul>
+
+            <ul class="tags" aria-label="Smooth Snake technologies">
+              <li>Python</li>
+              <li>Pygame</li>
+              <li>Flask</li>
+              <li>JavaScript</li>
+              <li>HTML &amp; CSS</li>
+            </ul>
+
+            <p class="project__note">
+              The board on the right is a portfolio recreation in vanilla JavaScript — press
+              play and steer with the arrow keys.
+            </p>
+
+            <div class="project__links">
+              <a class="project-link" href="https://github.com/FlameKaiser2201/snake-game" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>
+                <span>View source</span>
+                <svg class="icon project-link__arrow" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="game-wrap">
+            <div class="game">
+              <div class="game__head">
+                <span class="game__label">Playable demo</span>
+                <div class="game__scores">
+                  <span>Score <b id="game-score">0</b></span>
+                  <span>Best <b id="game-best">0</b></span>
+                </div>
+              </div>
+
+              <div class="game__board" id="game-board" tabindex="0" role="application" aria-label="Smooth Snake game. Use arrow keys or W A S D to steer, space to pause.">
+                <canvas id="snake-canvas" width="480" height="480" aria-hidden="true"></canvas>
+                <div class="game__overlay" id="game-overlay">
+                  <span class="game__overlay-label" id="game-overline">Interpolated movement</span>
+                  <h4 id="game-title">Ready to slither?</h4>
+                  <p id="game-message">Steer with arrow keys or WASD. Space pauses, R restarts.</p>
+                  <button class="btn btn--solid btn--sm" id="game-start" type="button">Play now</button>
+                  <p class="game__demo-note">Recreated in vanilla JS</p>
+                </div>
+              </div>
+
+              <div class="game__controls">
+                <div class="dpad" aria-label="Directional controls">
+                  <button type="button" class="dpad__btn dpad__btn--up" data-dir="up" aria-label="Move up">↑</button>
+                  <button type="button" class="dpad__btn dpad__btn--left" data-dir="left" aria-label="Move left">←</button>
+                  <button type="button" class="dpad__btn dpad__btn--down" data-dir="down" aria-label="Move down">↓</button>
+                  <button type="button" class="dpad__btn dpad__btn--right" data-dir="right" aria-label="Move right">→</button>
+                </div>
+                <div class="game__btns">
+                  <button class="game-btn" id="game-pause" type="button" aria-label="Pause game">
+                    <svg class="icon" aria-hidden="true"><use href="#i-pause"></use></svg>
+                    <span>Pause</span>
+                  </button>
+                  <button class="game-btn" id="game-reset" type="button" aria-label="Restart game">
+                    <svg class="icon" aria-hidden="true"><use href="#i-restart"></use></svg>
+                    <span>Restart</span>
+                  </button>
+                </div>
+              </div>
+
+              <p class="game__hint">
+                <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> or <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>
+                <span>·</span> swipe on mobile
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__top">
+            <span class="section-num">03</span>
+            <span class="section-label">Toolkit</span>
+            <span class="section-head__rule" aria-hidden="true"></span>
+          </div>
+          <div class="section-head__row">
+            <h2 id="skills-title">The tools<br>behind the work.</h2>
+            <p class="section-head__note">
+              The languages I write, the foundations I reason with, and the ideas I’m building
+              toward.
+            </p>
+          </div>
+        </div>
+
+        <div class="skills__grid">
+          <div class="skill-group reveal">
+            <div class="skill-group__head">
+              <span class="skill-group__num" aria-hidden="true">A</span>
+              <h3>Languages &amp; web</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span>Python</span><em>01</em></li>
+              <li><span>Java</span><em>02</em></li>
+              <li><span>JavaScript</span><em>03</em></li>
+              <li><span>HTML</span><em>04</em></li>
+              <li><span>CSS</span><em>05</em></li>
+              <li><span>MySQL</span><em>06</em></li>
+            </ul>
+            <p class="skill-group__note">The daily drivers.</p>
+          </div>
+
+          <div class="skill-group reveal" data-delay="1">
+            <div class="skill-group__head">
+              <span class="skill-group__num" aria-hidden="true">B</span>
+              <h3>Foundations</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span>Data structures &amp; algorithms</span><em>01</em></li>
+              <li><span>Problem solving</span><em>02</em></li>
+            </ul>
+            <p class="skill-group__note">How I break hard problems into small, working pieces.</p>
+          </div>
+
+          <div class="skill-group reveal" data-delay="2">
+            <div class="skill-group__head">
+              <span class="skill-group__num" aria-hidden="true">C</span>
+              <h3>AI &amp; tools</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span>Artificial intelligence</span><em>01</em></li>
+              <li><span>Flask</span><em>02</em></li>
+              <li><span>Pygame</span><em>03</em></li>
+            </ul>
+            <p class="skill-group__note">Where the next set of ideas gets built.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__top">
+            <span class="section-num">04</span>
+            <span class="section-label">Journey</span>
+            <span class="section-head__rule" aria-hidden="true"></span>
+          </div>
+          <div class="section-head__row">
+            <h2 id="journey-title">Where I’ve<br>learned.</h2>
+            <p class="section-head__note">
+              A degree in progress, plus certifications earned by showing up and doing the work.
+            </p>
+          </div>
+        </div>
+
+        <div class="journey__grid">
+          <div class="journey__col reveal">
+            <h3 class="subhead">Education</h3>
+            <article class="edu-card">
+              <div class="edu-card__top">
+                <span class="edu-card__date">2024 — 2028</span>
+                <span class="edu-card__badge">In progress</span>
+              </div>
+              <h4>Bachelor of Computer Science Engineering</h4>
+              <p class="edu-card__school">Manav Rachna University</p>
+              <p class="edu-card__desc">
+                Building a foundation in Python, data structures &amp; algorithms, and modern
+                software development practices.
+              </p>
+              <div class="edu-card__focus">
+                <span>Focus</span>
+                <p>Python · DSA · Modern software practices</p>
+              </div>
+            </article>
+
+            <h3 class="subhead subhead--spaced">Languages</h3>
+            <div class="languages">
+              <span>Hindi</span>
+              <span>English</span>
+            </div>
+          </div>
+
+          <div class="journey__col reveal" data-delay="1">
+            <h3 class="subhead">Certifications</h3>
+
+            <ul class="cert-list">
+              <li class="cert">
+                <span class="cert__mark" aria-hidden="true">
+                  <svg class="icon"><use href="#i-spark"></use></svg>
+                </span>
+                <div>
+                  <h4>Event Coordinator</h4>
+                  <p>Code Debugging event · Manav Rachna University</p>
+                  <span class="cert__tag">Certification</span>
+                </div>
+              </li>
+              <li class="cert">
+                <span class="cert__mark" aria-hidden="true">
+                  <svg class="icon"><use href="#i-check"></use></svg>
+                </span>
+                <div>
+                  <h4>Social Internship</h4>
+                  <p>Completion certification</p>
+                  <span class="cert__tag">Certification</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="journey__aside">
+              <p class="journey__aside-label">Always learning</p>
+              <p class="journey__aside-text">
+                Currently going deeper into AI applications, clean architecture, and the craft of
+                shipping software that holds up.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__panel reveal">
+          <div class="contact__glow" aria-hidden="true"></div>
+          <span class="contact__watermark" aria-hidden="true">RS</span>
+
+          <div class="contact__grid">
+            <div class="contact__intro">
+              <p class="eyebrow contact__eyebrow">
+                <span class="eyebrow__dot" aria-hidden="true"></span>
+                05 / Contact
+              </p>
+              <h2 class="contact__title" id="contact-title">Have a problem<br>worth <em>solving?</em></h2>
+              <p class="contact__text">
+                I’m open to internships and early-career roles — and always happy to talk about
+                AI, software, or a good side project.
+              </p>
+            </div>
+
+            <div class="contact__side">
+              <div class="contact__row">
+                <span class="contact__label">Email</span>
+                <div class="contact__value">
+                  <a href="mailto:rudranshsinghfbd@gmail.com">rudranshsinghfbd@gmail.com</a>
+                  <button class="copy-btn" id="copy-email" type="button" data-email="rudranshsinghfbd@gmail.com" aria-label="Copy email address">
+                    <svg class="icon icon--copy" aria-hidden="true"><use href="#i-copy"></use></svg>
+                    <svg class="icon icon--check" aria-hidden="true"><use href="#i-check"></use></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="contact__row">
+                <span class="contact__label">Phone</span>
+                <div class="contact__value">
+                  <a href="tel:+918800113482">+91 88001 13482</a>
+                </div>
+              </div>
+
+              <div class="contact__row">
+                <span class="contact__label">GitHub</span>
+                <div class="contact__value">
+                  <a href="https://github.com/FlameKaiser2201" target="_blank" rel="noopener noreferrer">
+                    FlameKaiser2201
+                    <svg class="icon icon--inline" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact__row">
+                <span class="contact__label">Résumé</span>
+                <div class="contact__value">
+                  <a href="assets/resume/Rudransh-Singh-CV.pdf" download="Rudransh-Singh-CV.pdf">
+                    Download PDF
+                    <svg class="icon icon--inline" aria-hidden="true"><use href="#i-download"></use></svg>
+                  </a>
+                </div>
+              </div>
+
+              <a class="btn btn--tan contact__cta" href="mailto:rudranshsinghfbd@gmail.com">
+                Say hello
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact__foot">
+            <span>Based in India · Open to opportunities</span>
+            <a href="#home">Back to top
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="footer__brand" href="#home">Rudransh Singh<span aria-hidden="true">.</span></a>
+      <p class="footer__copy">© <span id="year">2026</span> Rudransh Singh. Built with care, HTML, CSS &amp; JavaScript.</p>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .game__hint { display: none; }
+    </style>
+  </noscript>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — Rudransh Singh</title>
+  <meta name="description" content="This page could not be found. Return to Rudransh Singh's portfolio.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f4efe6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/rudransh-portfolio/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/rudransh-portfolio/assets/css/fonts.css">
+  <link rel="stylesheet" href="/rudransh-portfolio/assets/css/style.css">
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try {
+        var saved = localStorage.getItem('rs-theme');
+        root.setAttribute('data-theme', saved === 'dark' || saved === 'light'
+          ? saved
+          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+      } catch (e) {
+        root.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M20 12H4M11 5l-7 7 7 7"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.1A8.5 8.5 0 0 1 9.9 3.5 8.5 8.5 0 1 0 20.5 14.1Z"/></symbol>
+  </svg>
+
+  <header class="site-header is-scrolled">
+    <div class="container header__inner">
+      <a class="brand" href="/rudransh-portfolio/" aria-label="Rudransh Singh — home">
+        <span class="brand__mark" aria-hidden="true">R</span>
+        <span class="brand__text">rudransh<span aria-hidden="true">.</span></span>
+      </a>
+      <div class="header__actions">
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">
+          <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+          <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+        </button>
+        <a class="btn btn--solid btn--sm" href="/rudransh-portfolio/">
+          Back home
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="error-page">
+    <div class="container error-page__inner">
+      <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Error 404</p>
+      <p class="error-code" aria-hidden="true">404</p>
+      <h1 class="error-title">This page took a wrong turn.</h1>
+      <p class="error-text">
+        The link you followed doesn’t exist — but the good stuff is still on the home page.
+      </p>
+      <div class="error-actions">
+        <a class="btn btn--solid" href="/rudransh-portfolio/">
+          Back to the portfolio
+          <svg class="icon" aria-hidden="true"><use href="#i-arrow-left"></use></svg>
+        </a>
+        <a class="btn btn--ghost" href="/rudransh-portfolio/#contact">Get in touch</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="footer__brand" href="/rudransh-portfolio/">Rudransh Singh<span aria-hidden="true">.</span></a>
+      <p class="footer__copy">© <span id="year">2026</span> Rudransh Singh.</p>
+    </div>
+  </footer>
+
+  <script src="/rudransh-portfolio/assets/js/main.js" defer></script>
+</body>
+</html>
